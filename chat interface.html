@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat Interface</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
+    
+   <!-- <style>
       body {
         display: flex;
         justify-content: center;
@@ -23,21 +27,36 @@
         padding: 5px;
         font-size: 16px;
       }
-      </style>
-            <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="chat.html">Refrence</a></li>
-         <li><a href="about2.html">More</a></li>
-      </ul>
-    </nav>
+      </style>-->
   </head>
+  
+    
   <body>
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="site-logo">
+                <a href="index.html" aria-label="Go to homepage">
+                    <img src="/img/logotip website2.png" alt="Logo" class="site-logo" id="siteLogo">
+                </a>
+            </div>
+            <div class="container1">
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    ☰
+                </button>
+                <ul>
+                    <li><a href="about.html" aria-describedby="about-desc">About</a></li>
+                    <li><a href="about2.html" aria-describedby="projects-desc">More</a></li>
+                    <li><a href="chat interface.html" aria-describedby="skills-desc" target="_blank" rel="noopener noreferrer">Typer</a></li>
+                    <li><a href="cht.html" aria-describedby="contact-desc">Chat</a></li>
+                    <li><a href="contact.html" aria-describedby="contact-desc">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <canvas id="chatCanvas" width="800" height="600"></canvas>
     <input type="text" id="chatInput" placeholder="Type a message..." />
-    <script>
-          <nav>
+    
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -45,3 +64,7 @@
         <li><a href="chat.html">Refrence</a></li>
       </ul>
     </nav>
+    <script src="/js/scr.js"></script>
+    </body>
+
+    </html>
